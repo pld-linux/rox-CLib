@@ -1,0 +1,20 @@
+diff -urN aaa/ROX-CLib/AppRun ROX-CLib/AppRun
+--- aaa/ROX-CLib/AppRun	Tue Mar 19 09:32:08 2002
++++ ROX-CLib/AppRun	Fri Jun 14 22:26:42 2002
+@@ -18,6 +18,7 @@
+     --xterm-compile)
+         exec xterm -e $0 --compile;;
+     --compile)
++	shift
+ 	if [ ! -d $APP_DIR/src ] ; then
+ 	    echo "ERROR from $0:" >&2
+ 	    echo "Cannot compile - source code is missing!" >&2
+@@ -29,7 +30,7 @@
+ 	    (cd $APP_DIR/src; autoconf)
+ 	fi
+ 	rm -f $APP_DIR/src/config.cache $APP_DIR/src/Makefile
+-	cd $APP_DIR/src && ./configure --bindir=$APP_DIR/$PLATFORM \
++	cd $APP_DIR/src && ./configure --bindir=$APP_DIR/$PLATFORM $@ \
+ 			&& make clean && make BINDIR=$APP_DIR/$PLATFORM \
+ 			&& echo Done >&2 && exit 0
+ 	echo Compile failed >&2
