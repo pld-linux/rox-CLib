@@ -27,7 +27,7 @@ diff -urN aaa/ROX-CLib/src/rox_run.sh ROX-CLib/src/rox_run.sh
  
  if [ -z "$APPPATH" ]; then
 -    APPPATH=$HOME/Apps:/usr/local/apps export APPPATH
-+    APPPATH=$HOME/Apps:/usr/local/apps:/usr/X11R6/share/ROX-apps export APPPATH
++    APPPATH=$HOME/Apps:/usr/local/apps:/usr/X11R6/lib/ROX-apps export APPPATH
  fi
  
  IFS=:
