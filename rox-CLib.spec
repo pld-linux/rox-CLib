@@ -18,7 +18,6 @@ BuildRequires:	libxml2-devel
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 %define   _appsdir  %{_libdir}/ROX-apps
 
 %description
