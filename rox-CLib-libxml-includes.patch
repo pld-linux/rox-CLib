@@ -1,0 +1,48 @@
+diff -urN aaa/ROX-CLib/src/rox_filer_action.c ROX-CLib/src/rox_filer_action.c
+--- aaa/ROX-CLib/src/rox_filer_action.c	Tue Mar 19 09:32:13 2002
++++ ROX-CLib/src/rox_filer_action.c	Tue Jun 18 12:56:02 2002
+@@ -10,7 +10,7 @@
+ 
+ #include <glib.h>
+ #ifdef HAVE_XML
+-#include <parser.h>
++#include <libxml/parser.h>
+ #else
+ 
+ /* Fake the XML stuff */
+diff -urN aaa/ROX-CLib/src/rox_soap.c ROX-CLib/src/rox_soap.c
+--- aaa/ROX-CLib/src/rox_soap.c	Mon Apr 29 10:18:16 2002
++++ ROX-CLib/src/rox_soap.c	Tue Jun 18 12:56:18 2002
+@@ -26,7 +26,7 @@
+ #include <gtk/gtkinvisible.h>
+ 
+ #ifdef HAVE_XML
+-#include <parser.h>
++#include <libxml/parser.h>
+ #endif
+ 
+ #include "rox_soap.h"
+diff -urN aaa/ROX-CLib/src/rox_soap_server.c ROX-CLib/src/rox_soap_server.c
+--- aaa/ROX-CLib/src/rox_soap_server.c	Mon Apr 29 10:18:16 2002
++++ ROX-CLib/src/rox_soap_server.c	Tue Jun 18 12:56:24 2002
+@@ -26,7 +26,7 @@
+ #include <gtk/gtkinvisible.h>
+ 
+ #ifdef HAVE_XML
+-#include <parser.h>
++#include <libxml/parser.h>
+ #endif
+ 
+ #define DEBUG 1
+diff -urN aaa/ROX-CLib/src/test.c ROX-CLib/src/test.c
+--- aaa/ROX-CLib/src/test.c	Tue Mar 19 09:32:16 2002
++++ ROX-CLib/src/test.c	Tue Jun 18 12:56:29 2002
+@@ -11,7 +11,7 @@
+ #include <gtk/gtk.h>
+ 
+ #ifdef HAVE_XML
+-#include <parser.h>
++#include <libxml/parser.h>
+ #endif
+ 
+ #define DEBUG 1
