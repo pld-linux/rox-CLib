@@ -8,6 +8,7 @@ Release:	2
 License:	GPL
 Group:		X11/Libraries
 Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tgz
+# Source0-md5:	f93108a1e1dc1c7252c1f0d6d7629839
 Patch0:		%{name}-cflags.patch
 Patch1:		%{name}-allow-configure-options.patch
 Patch2:		%{name}-libxml-includes.patch
