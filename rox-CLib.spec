@@ -1,11 +1,10 @@
-%define _appsdir /usr/X11R6/share/ROX-apps
 %define _name ROX-CLib
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	A library for ROX applications
 Summary(pl):	Biblioteka dla aplikacji ROXa
 Name:		rox-CLib
 Version:	0.2.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Libraries
 Source0:	http://www.kerofin.demon.co.uk/rox/%{_name}-%{version}.tgz
@@ -20,6 +19,7 @@ BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
+%define   _appsdir  %{_libdir}/ROX-apps
 
 %description
 A library for ROX applications.
