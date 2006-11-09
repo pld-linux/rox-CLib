@@ -31,7 +31,7 @@ Biblioteka dla aplikacji ROXa.
 Summary:	ROX-CLib header files
 Summary(pl):	Pliki nag³ówkowe do ROX-CLib
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	gtk+-devel >= 1.2.8
 
 %description devel
@@ -44,7 +44,7 @@ Pliki nag³ówkowe do bibliotek ROX-CLib.
 Summary:	ROX-CLib static libraries
 Summary(pl):	Biblioteki statyczne ROX-CLib
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 Requires:	gtk+-devel >= 1.2.8
 
 %description static
