@@ -1,7 +1,7 @@
 %define _name ROX-CLib
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	A library for ROX applications
-Summary(pl):	Biblioteka dla aplikacji ROXa
+Summary(pl.UTF-8):   Biblioteka dla aplikacji ROXa
 Name:		rox-CLib
 Version:	0.2.2
 Release:	2
@@ -24,12 +24,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A library for ROX applications.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka dla aplikacji ROXa.
 
 %package devel
 Summary:	ROX-CLib header files
-Summary(pl):	Pliki nag³ówkowe do ROX-CLib
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do ROX-CLib
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gtk+-devel >= 1.2.8
@@ -37,12 +37,12 @@ Requires:	gtk+-devel >= 1.2.8
 %description devel
 Header files for the ROX-CLib libraries.
 
-%description devel -l pl
-Pliki nag³ówkowe do bibliotek ROX-CLib.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe do bibliotek ROX-CLib.
 
 %package static
 Summary:	ROX-CLib static libraries
-Summary(pl):	Biblioteki statyczne ROX-CLib
+Summary(pl.UTF-8):   Biblioteki statyczne ROX-CLib
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	gtk+-devel >= 1.2.8
@@ -50,7 +50,7 @@ Requires:	gtk+-devel >= 1.2.8
 %description static
 Static libraries for the ROX-CLib libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne dla ROX-CLib.
 
 %prep
