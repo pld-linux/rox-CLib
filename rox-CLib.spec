@@ -1,7 +1,7 @@
 %define _name ROX-CLib
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	A library for ROX applications
-Summary(pl.UTF-8):   Biblioteka dla aplikacji ROXa
+Summary(pl.UTF-8):	Biblioteka dla aplikacji ROXa
 Name:		rox-CLib
 Version:	0.2.2
 Release:	2
@@ -29,7 +29,7 @@ Biblioteka dla aplikacji ROXa.
 
 %package devel
 Summary:	ROX-CLib header files
-Summary(pl.UTF-8):   Pliki nagłówkowe do ROX-CLib
+Summary(pl.UTF-8):	Pliki nagłówkowe do ROX-CLib
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gtk+-devel >= 1.2.8
@@ -42,7 +42,7 @@ Pliki nagłówkowe do bibliotek ROX-CLib.
 
 %package static
 Summary:	ROX-CLib static libraries
-Summary(pl.UTF-8):   Biblioteki statyczne ROX-CLib
+Summary(pl.UTF-8):	Biblioteki statyczne ROX-CLib
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	gtk+-devel >= 1.2.8
